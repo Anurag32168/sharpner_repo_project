@@ -1,21 +1,34 @@
-//console.log("hello");
-// Write your code below:
-//adding heading 
-const heading = document.getElementById("main-heading");
-heading.textContent = "Fruit World";
+// get all list items
+const items = document.getElementsByClassName("fruit");
 
-heading.style.color = 'orange';
+// 3rd element yellow
+items[2].style.backgroundColor = "yellow";
 
-const headerDiv = document.getElementById("header");
-headerDiv.style.backgroundColor = 'green';
+// all bold
+for (let i = 0; i < items.length; i++) {
+    items[i].style.fontWeight = "bold";
+}
 
-headerDiv.style.borderBottom = "5px solid orange";
 
-const basketHeading = document.getElementById("basket-heading");
 
-basketHeading.style.color = "green";
+// //console.log("hello");
+// // Write your code below:
+// //adding heading 
+// const heading = document.getElementById("main-heading");
+// heading.textContent = "Fruit World";
 
-const thanksDiv = document.getElementById("thanks");
-const para = document.createElement("p");
-para.textContent = "Please visit us again";
-thanksDiv.appendChild(para);
+// heading.style.color = 'orange';
+
+// const headerDiv = document.getElementById("header");
+// headerDiv.style.backgroundColor = 'green';
+
+// headerDiv.style.borderBottom = "5px solid orange";
+
+// const basketHeading = document.getElementById("basket-heading");
+
+// basketHeading.style.color = "green";
+
+// const thanksDiv = document.getElementById("thanks");
+// const para = document.createElement("p");
+// para.textContent = "Please visit us again";
+// thanksDiv.appendChild(para);
